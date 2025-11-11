@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
@@ -22,9 +23,17 @@ fun ListDemo() {
 
 @Composable
 fun LazyColumnDemo() {
+    //similar to recycler view, it will render item dynamically
     LazyColumn (content = {
         items(100, itemContent = {
             TextItem(text = "Index $it")
+        })
+    })
+
+    var myList =  listOf<String>("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "k")
+    LazyColumn(content = {
+        itemsIndexed(myList, itemContent = { index, item ->
+            TextItem(text = "Item $item")
         })
     })
 }
