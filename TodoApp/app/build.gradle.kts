@@ -3,7 +3,9 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 
-    id("com.google.devtools.ksp") version "2.2.10-2.0.2"
+    id("org.jetbrains.kotlin.kapt")
+
+
 }
 
 android {
@@ -65,7 +67,7 @@ dependencies {
     // room db
     val room_version = "2.8.3"
     implementation("androidx.room:room-runtime:$room_version")
-    ksp("androidx.room:room-compiler:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
 
 

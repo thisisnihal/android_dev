@@ -100,13 +100,11 @@ fun TodoItem(item: Todo, onDelete: () -> Unit) {
             Text(
                 fontSize = 18.sp,
                 text = item.title,
-                color = Color.White
             )
             Text(
                 fontSize = 10.sp,
                 fontWeight = FontWeight.Medium,
                 fontStyle = FontStyle.Italic,
-                color = Color.Gray,
                 text = SimpleDateFormat("HH:mm aa, dd/MM", Locale.ENGLISH).format(item.createdAt)
             )
         }
@@ -114,7 +112,7 @@ fun TodoItem(item: Todo, onDelete: () -> Unit) {
             Icon(
                 painter = painterResource(id = R.drawable.outline_delete_24),
                 contentDescription = "Delete",
-                tint = Color.White
+                tint = Color.Black
             )
         }
     }
