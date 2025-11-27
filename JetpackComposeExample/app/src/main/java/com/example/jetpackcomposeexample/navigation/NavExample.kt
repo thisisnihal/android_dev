@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeexample.navexample
+package com.example.jetpackcomposeexample.navigation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -16,7 +15,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.example.jetpackcomposeexample.navexample.NavExample
+import com.example.jetpackcomposeexample.animation.AnimationExample
+import com.example.jetpackcomposeexample.image.ImageExample
+import com.example.jetpackcomposeexample.navigation.NavExample
 import com.example.jetpackcomposeexample.text.SimpleTextActivity
 import com.example.jetpackcomposeexample.ui.theme.JetpackComposeExampleTheme
 
@@ -38,7 +39,9 @@ fun MainScreen() {
 
     val examples = listOf(
         "Simple Text Example" to SimpleTextActivity::class.java,
-        "Navigation Example" to NavExample::class.java
+        "Navigation Example" to NavExample::class.java,
+        "Animation Example" to AnimationExample::class.java,
+        "Image Example" to ImageExample::class.java
         )
 
     LazyColumn(

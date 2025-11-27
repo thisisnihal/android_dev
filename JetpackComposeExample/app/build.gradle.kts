@@ -62,4 +62,28 @@ dependencies {
     val nav_version = "2.9.6"
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
+    // material icons
+    implementation("androidx.compose.material:material-icons-extended")
+
+    //
+    implementation ("androidx.compose.material:material")
+
+    // for Image --------------
+
+    // https://github.com/bumptech/glide    (image downloading caching)
+    implementation("com.github.bumptech.glide:glide:5.0.5")
+
+    // https://github.com/square/picasso
+    implementation("com.squareup.picasso:picasso:2.8")
+
+    // https://coil-kt.github.io/coil/compose/  (refer this good doc)
+
+//    implementation("io.coil-kt.coil3:coil-network-okhttp:3.3.0")
+    implementation("io.coil-kt:coil-compose:2.6.0")
+    implementation("io.coil-kt:coil-svg:2.6.0")
+    implementation("io.coil-kt:coil-gif:2.6.0")
+
+
+
+
 }

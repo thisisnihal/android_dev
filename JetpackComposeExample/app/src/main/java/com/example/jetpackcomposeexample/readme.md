@@ -1,8 +1,8 @@
 
 ### Add new activity
-step 1. create a subpackage say `text` inside the main package
-step 2. create an activity say `SimpleTextActivity.kt` inside the subpackage `com.example.jetpackcomposeexample.text`
-step 3. Add this newly created activity in `AndroidManifest.xml` 
+step 1. create a subpackage say `text` inside the main package  
+step 2. create an activity say `SimpleTextActivity.kt` inside the subpackage `com.example.jetpackcomposeexample.text`  
+step 3. Add this newly created activity in `AndroidManifest.xml`   
 ```xml
 <application
     android:theme="@style/Theme.Material3.DayNight.NoActionBar"

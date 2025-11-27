@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeexample.navexample
+package com.example.jetpackcomposeexample.navigation
 
 enum class AppScreen(val title: String) {
     ScreenA(title = "Screen A"), // start screen
