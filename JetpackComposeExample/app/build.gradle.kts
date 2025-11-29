@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -78,12 +80,23 @@ dependencies {
 
     // https://coil-kt.github.io/coil/compose/  (refer this good doc)
 
-//    implementation("io.coil-kt.coil3:coil-network-okhttp:3.3.0")
+    // implementation("io.coil-kt.coil3:coil-network-okhttp:3.3.0")
     implementation("io.coil-kt:coil-compose:2.6.0")
     implementation("io.coil-kt:coil-svg:2.6.0")
     implementation("io.coil-kt:coil-gif:2.6.0")
 
 
+    // room db
+    val room_version = "2.8.3"
+    implementation("androidx.room:room-runtime:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+
+    // Datastore
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+
+    // SAF
+    implementation("androidx.documentfile:documentfile:1.1.0")
 
 
 }

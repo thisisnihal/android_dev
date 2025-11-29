@@ -53,7 +53,7 @@ class NavExample : ComponentActivity() {
 fun App(
     navController: NavHostController = rememberNavController()
 ) {
-    val backStackEntry by navController.currentBackStackEntryAsState()
+    val backStackEntry by navController.currentBackStackEntryAsState() // used to Read data from current screen
 
     // Fallback to ScreenA if null
     val currentScreen =

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <!-- To allow long-term folder access, For Android 13+ this permission is ignored   -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+
+
 
     <application
         android:allowBackup="true"
@@ -29,6 +37,18 @@
         <activity android:name=".navigation.NavExample" />
         <activity android:name=".animation.AnimationExample" />
         <activity android:name=".image.ImageExample" />
+        <activity android:name=".storage.StorageActivity" />
+        <activity android:name=".storage.room.RoomActivity" />
+        <activity android:name=".storage.datastore.DataStoreActivity" />
+        <activity android:name=".storage.files.InternalStorageActivity" />
+        <activity android:name=".storage.files.ExternalStorageActivity" />
+        <activity android:name=".storage.mediastore.MediaStoreActivity" />
+        <activity android:name=".storage.saf.SafDirectoryPickerActivity" />
+
+
+
+
+
 
     </application>
 

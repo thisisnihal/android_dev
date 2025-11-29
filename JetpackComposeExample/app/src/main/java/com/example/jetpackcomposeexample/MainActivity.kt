@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.example.jetpackcomposeexample.animation.AnimationExample
 import com.example.jetpackcomposeexample.image.ImageExample
 import com.example.jetpackcomposeexample.navigation.NavExample
+import com.example.jetpackcomposeexample.storage.StorageActivity
 import com.example.jetpackcomposeexample.text.SimpleTextActivity
 import com.example.jetpackcomposeexample.ui.theme.JetpackComposeExampleTheme
 
@@ -41,7 +42,8 @@ fun MainScreen() {
         "Simple Text Example" to SimpleTextActivity::class.java,
         "Navigation Example" to NavExample::class.java,
         "Animation Example" to AnimationExample::class.java,
-        "Image Example" to ImageExample::class.java
+        "Image Example" to ImageExample::class.java,
+        "Storage Example" to StorageActivity::class.java
         )
 
     LazyColumn(
